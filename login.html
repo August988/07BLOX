@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07blocks login</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+   
+</head>
+<body>
+    <form id="login-form" onsubmit="return false;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit" onclick="login()">Login</button>
+    </form>
+
+    <script>
+        var users = {
+            "user1": "password1",
+            "user2": "password2",
+            "user3": "password3"
+        };
+
+        function login() {
+            if (document.getElementById("username").value in users && document.getElementById("password").value === users[document.getElementById("username").value]) {
+                sessionStorage.setItem("loggedin", true);
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+    </script>
+</body>
+</html>
