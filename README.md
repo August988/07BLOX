@@ -1,4 +1,4 @@
-# 07BLOX
-the ebst roblox reviavl here
+# 07BLOCKS
+the ebst roblox reviavl in the whole world ever
 # site
 https://07blox.pages.dev/
