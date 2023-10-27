@@ -7,11 +7,17 @@
    <body>
       <center>
            <script>
+        if (!localStorage.getItem('username')) {
+        window.location.href = 'login.html';
+      }
       const username = localStorage.getItem('username');
       const greeting = `Greetings, ${username}!`;
       document.write(greeting);
     </script>
          <br>
+         var username = localStorage.getItem("username");
+      if (username) {
+        document.write("<h1>Greetings, " + username + "!</h1>");
       <input type="button" onclick="location.href='https://1013blox.pages.dev/games/2010.html';" value="2010 Games" />
       <input type="button" onclick="location.href='https://1013blox.pages.dev/games/2013.html';" value="2013 Games" /><br>
 
