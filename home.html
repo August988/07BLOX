@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>HTML Meta Tag</title>
-      <meta http-equiv = "refresh" content = "3; url = https://1013blox.pages.dev/login.html" />
+      <title>Home - 1013BLOX</title>
+ 
    </head>
    <body>
       <center>
+           <script>
+      const username = localStorage.getItem('username');
+      const greeting = `Greetings, ${username}!`;
+      document.write(greeting);
+    </script>
       <input type="button" onclick="location.href='https://1013blox.pages.dev/games/2010.html';" value="2010 Games" />
       <input type="button" onclick="location.href='https://1013blox.pages.dev/games/2013.html';" value="2013 Games" /><br>
 
