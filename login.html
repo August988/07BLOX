@@ -27,6 +27,7 @@
             if (document.getElementById("username").value in users && document.getElementById("password").value === users[document.getElementById("username").value]) {
                 sessionStorage.setItem("loggedin", true);
                 window.location.href = "home.html";
+             localStorage.setItem("username", username);
             } else {
                 alert("Invalid username or password");
             }
