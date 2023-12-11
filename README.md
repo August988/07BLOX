@@ -1,5 +1,5 @@
 # ARCHIVED
-This site has been archived. We will be focusing on our new 2015E revival, WindBLOX.
+This site has been archived.
 # 1013BLOCKS
 the ebst roblox reviavl in the whole world ever 
 # Discord
